@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "autosell",
+  "version": "${version}",
+  "name": "Auto Sell",
+  "description": "Auto sell for the DonutSMP /sell menu. Pick the items in the UI (Right Shift), toggle on/off, stop instantly with a key.",
+  "authors": [
+    "AutoSell"
+  ],
+  "icon": "assets/autosell/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.autosell.AutoSellMod"
+    ]
+  },
+  "mixins": [
+    "autosell.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "java": ">=21",
+    "minecraft": ["${mc_version}"]
+  }
+}
